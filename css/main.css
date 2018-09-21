@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:200,400,500,700,800i');
+
+/*----- Main -----*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', Helvetica, Arial, sans-serif;
+  background-image: url("https://raw.githubusercontent.com/Feldbot/fCCimages/master/Project-6-TwitchTV/twitchBG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*----- Header -----*/
+header {
+  margin-top: 5vh;
+  padding-bottom: 25px;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #0DCDD7;
+}
+
+/*----- Tabs -----*/
+ul {
+  list-style-type: none;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+li {
+  display: inline-block;
+}
+li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 -3px;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #fff;
+}
+li a:hover {
+  background: #900F47;
+  cursor: pointer;
+}
+.active {
+  background: #A30F47;
+}
+.inactive {
+  background: rgb(163, 15, 71);
+  opacity: .5;
+}
+
+/*----- Streamer status -----*/
+section {
+  max-width: 600px;
+  margin: 0px auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #A30F47;
+  background: rgba(172, 255, 255, 0.72);
+}
+#all, #online, #offline {
+  width: 100%;
+  text-align: left;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px 10px 15px 25px;
+  width: 50px;
+}
+.noLogo {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(172, 0, 42);
+  opacity: .2;
+}
+.name {
+  display: inline-block;
+  margin: 10px;
+  min-width: 20%;
+  vertical-align: middle;
+}
+.streaming {
+  display: inline-block;
+  vertical-align: middle;
+  width: 55%;
+  margin: 15px;
+}
+img {
+  width: 50px;
+  border-radius: 50%;
+}
+a {
+  text-decoration: none;
+}
+.twitcher {
+  color: rgb(122, 0, 0);
+  font-weight: 500;
+}
+.status {
+  text-align: left;
+  font-size: .8em;
+  color: rgb(122, 0, 0);
+}
+.selection:hover {
+  background-color: rgba(122, 255, 255, .42);
+}
+
+/*----- Footer -----*/
+footer {
+  position: relative;
+  margin: 42px auto;
+}
+#footer {
+  color: #0DCDD7;
+  text-align: center;
+}
+#footerLink {
+  color: #0DCDD7;
+}
+#footerLink:hover {
+  color: rgb(0, 255, 255);
+}
+
+/*----- Media queries -----*/
+@media screen and (max-width: 760px) {
+  ul {
+    width: 80%;
+    margin: 0 auto;
+  }
+  ul li, li a {
+    width: 100%;
+    margin: 0 auto;
+  }
+  section {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .streaming {
+    display: block;
+    width: 90%;
+    margin: -10px 25px 20px 25px;
+    overflow: hidden;
+  }
+  .selection {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1px;
+  }
+}
+@media screen and (max-width: 472px)  {
+  h1 {
+    font-size: 2.4em;
+    line-height: 1em;
+    padding-top: 15px;
+  }
+  .streaming {
+    width: 80%;
+  }
+}
+
+/* Background image:  https://pixabay.com/en/background-computer-screen-wallpaper-2242685/ */
